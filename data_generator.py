@@ -1,5 +1,5 @@
-import random 
-import string 
+import random
+import string
 
 
 user_ids = list(range(1, 101))
@@ -17,10 +17,10 @@ def generate_message() -> dict:
     random_recipient_id = random.choice(recipient_ids_copy)
 
     # Generate a random message
-    message = ''.join(random.choice(string.ascii_letters) for i in range(32))
+    message = "".join(random.choice(string.ascii_letters) for i in range(32))
 
     return {
-        'user_id': random_user_id,
-        'recipient_id': random_recipient_id,
-        'message': message
+        "user_id": random_user_id,
+        "recipient_id": random_recipient_id,
+        "message": message,
     }
